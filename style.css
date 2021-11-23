@@ -1,0 +1,27 @@
+body {
+    color: #0096c7;
+    background-color: #5ca0f2;
+    background-image: linear-gradient(315deg, #5ca0f2 0%, #f5f7f6 74%);
+    font-family: 'Jost', sans-serif;
+}
+
+.heading {
+    width: 80%;
+    font-size: 22px;
+}
+
+#camera {
+    border: 2px dashed rgb(109, 109, 109);
+    width: 350px;
+    height: 350px;
+}
+
+p, label {
+    font-weight: bold;
+}
+
+.blue-button, .green-button {
+    width: 25%;
+    height: 25%;
+    font-size: 18px;
+}

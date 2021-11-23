@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Project 104</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap Links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--Webcam Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <!--ml5.js Link-->
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <!--font-family: 'Overlock', cursive;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:wght@900&display=swap" rel="stylesheet">
+    <!--font-family: 'Jost', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <!--Icon-->
+    <link rel="icon" href="Icon.png">
+    <link rel="shortcut-icon" href="Icon.png">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <center>
+        <h3 class="heading" style="font-family: 'Overlock', cursive; color: #023e8a; font-size: 35px;">Facial Recognition WebApp</h3>
+        <br> <br>
+
+        <p style="font-size: 22px;">Model is trained to identify the following objects:</p>
+        <br>
+
+        <b class="name_of_objects">
+          <button class="btn btn-info blue-button">Father</button>
+          <br> <br> <br>
+          
+          <button class="btn btn-info blue-button">Mother</button>
+          <br> <br> <br>
+          
+          <button class="btn btn-info blue-button">Sister</button>
+          <br> <br> <br>
+          
+          <button class="btn btn-info blue-button">Soumya</button>
+          <br> <br> <br>
+        </b>
+
+        <label>Webcam View -</label>
+        <div id="camera"></div>
+        <br> <br>
+
+        <div id="result"></div>
+        <br> <br>
+
+        <button onclick="take_snapshot()" class="btn btn-info blue-button">Capture Image</button>
+        <br> <br>
+
+        <button onclick="check()" class="btn btn-success green-button">Identify Image</button>
+        <br> <br>
+
+        <p style="font-size: 22px;">Object: <span id="result_object_name"></span></p>
+        <p style="font-size: 22px;">Accuracy: <span id="result_object_accuracy"></span></p>
+      </center>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+
+</html>
